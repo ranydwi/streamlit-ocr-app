@@ -6,7 +6,7 @@ from pdf2image import convert_from_path
 from PIL import Image
 
 # 📍 Path Tesseract
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # Ganti kalau pakai Windows
+# pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # Ganti kalau pakai Windows
 
 # 📁 Setup folder kerja
 UPLOAD_DIR = "upload_pdf"
