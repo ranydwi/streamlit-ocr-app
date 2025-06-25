@@ -51,7 +51,7 @@ if uploaded_files:
 
                     img = images[0]
                     w, h = img.size
-                    cropped = img.crop((0, 0, w, int(h * 0.35)))
+                    cropped = img.crop((int(w * 0.05), int(h * 0.05), int(w * 0.95), int(h * 0.25)))
 
                     text = pytesseract.image_to_string(cropped)
                     text = text.replace("O", "0").replace("I", "1").replace("l", "1").replace("：", ":")
