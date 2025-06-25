@@ -23,7 +23,7 @@ for folder in [UPLOAD_DIR, RESULT_DIR]:
 
 # 🧾 Header
 st.title("📄 Rename PDF berdasarkan Nomor: xxx/xxx/... (OCR)")
-st.markdown("Upload PDF hasil scan (2 halaman per file). Sistem akan melakukan OCR halaman pertama dan me-*rename* file berdasarkan nomor surat di dalamnya.")
+st.markdown("Upload PDF STP hasil scan (2 halaman / 3 halaman per file). Sistem akan melakukan OCR halaman pertama dan me-*rename* file berdasarkan nomor surat di dalamnya.")
 
 # 📤 Upload PDF
 uploaded_files = st.file_uploader("Upload file PDF", type="pdf", accept_multiple_files=True)
