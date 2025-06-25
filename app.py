@@ -44,7 +44,7 @@ if uploaded_files:
         def extract_nomor_ocr(path):
             try:
                 with tempfile.TemporaryDirectory() as tmpdir:
-                    images = convert_from_path(path, dpi=350, first_page=1, last_page=1, output_folder=tmpdir)
+                    images = convert_from_path(path, dpi=400, first_page=1, last_page=1, output_folder=tmpdir)
 
                     if not images:
                         return None
