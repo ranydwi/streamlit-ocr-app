@@ -9,7 +9,7 @@ import re
 from datetime import datetime
 
 # 📍 SET path ke tesseract.exe di Windows
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # GANTI JIKA PERLU
+# pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"  # GANTI JIKA PERLU
 
 # 📁 Setup folder kerja
 UPLOAD_DIR = "upload_pdf"
@@ -94,4 +94,3 @@ if uploaded_files:
 
     with open(zip_path, "rb") as f:
         st.download_button("⬇️ Download Hasil Rename (ZIP)", f, file_name=ZIP_NAME)
-
